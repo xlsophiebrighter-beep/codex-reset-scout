@@ -1,0 +1,24 @@
+{
+  "lookback_hours": 48,
+  "timeout_seconds": 15,
+  "community_min_reports": 2,
+  "sources": {
+    "tibo_feed_urls": [
+      "https://nitter.net/thsottiaux/rss"
+    ],
+    "openai_status": true,
+    "developer_community": true,
+    "github_issues": true,
+    "reddit": true,
+    "extra_feeds": []
+  },
+  "local": {
+    "enabled": true,
+    "codex_home": null,
+    "include_credits": false,
+    "credit_expiry_warning_hours": 72
+  },
+  "notifications": {
+    "webhook_url": null
+  }
+}

@@ -1,0 +1,32 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+.venv/
+venv/
+
+# Runtime state and local configuration may contain private usage metadata.
+.codex-reset-scout/
+state.json
+config.json
+*.local.json
+outputs/
+snapshots/
+
+# Never publish Codex authentication material or raw session logs.
+auth.json
+**/.codex/
+*.jsonl
+.env
+.env.*
+
+# Editor and OS noise.
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

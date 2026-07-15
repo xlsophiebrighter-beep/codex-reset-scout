@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=70", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codex-reset-scout"
+version = "0.1.0"
+description = "Early warning, local confirmation, and quota decisions for Codex resets."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [
+  { name = "xlsophiebrighter-beep" }
+]
+keywords = ["codex", "openai", "quota", "reset", "monitoring", "cli"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: System :: Monitoring",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.2",
+  "ruff>=0.6",
+]
+
+[project.scripts]
+codex-reset-scout = "codex_reset_scout.cli:main"
+codex-scout = "codex_reset_scout.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/xlsophiebrighter-beep/codex-reset-scout"
+Issues = "https://github.com/xlsophiebrighter-beep/codex-reset-scout/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]

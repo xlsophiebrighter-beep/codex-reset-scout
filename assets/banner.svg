@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title description">
+  <title id="title">Codex Reset Scout</title>
+  <desc id="description">A radar graphic with the tagline: See resets coming. Confirm what landed. Spend quota smarter.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080b16"/>
+      <stop offset="1" stop-color="#121d32"/>
+    </linearGradient>
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#54f2a3" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#54f2a3" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="360" rx="24" fill="url(#background)"/>
+  <path d="M0 292 C240 230 410 338 645 278 C870 222 1010 245 1200 180 V360 H0 Z" fill="#192942" opacity="0.45"/>
+
+  <g transform="translate(178 180)">
+    <circle r="112" fill="#0c1527" stroke="#28415f" stroke-width="2"/>
+    <circle r="82" fill="none" stroke="#29445f" stroke-width="1.5"/>
+    <circle r="51" fill="none" stroke="#29445f" stroke-width="1.5"/>
+    <circle r="20" fill="none" stroke="#29445f" stroke-width="1.5"/>
+    <path d="M0 0 L102 -46 A112 112 0 0 1 42 104 Z" fill="url(#sweep)"/>
+    <path d="M-112 0 H112 M0 -112 V112" stroke="#29445f" stroke-width="1"/>
+    <circle cx="63" cy="-31" r="5" fill="#54f2a3" filter="url(#glow)"/>
+    <circle cx="-39" cy="58" r="4" fill="#79a7ff" filter="url(#glow)"/>
+    <circle cx="22" cy="14" r="3.5" fill="#f5c96a" filter="url(#glow)"/>
+    <circle r="6" fill="#54f2a3"/>
+  </g>
+
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <text x="330" y="128" fill="#f6f8fc" font-size="55" font-weight="750" letter-spacing="-1">Codex Reset Scout</text>
+    <text x="332" y="177" fill="#a9b9cc" font-size="23">See resets coming. Confirm what landed. Spend quota smarter.</text>
+
+    <g transform="translate(332 224)" font-size="14" font-weight="700" letter-spacing="1">
+      <rect width="170" height="39" rx="19.5" fill="#17392e" stroke="#2b7257"/>
+      <text x="20" y="25" fill="#6bf2ad">EARLY WARNING</text>
+      <rect x="185" width="204" height="39" rx="19.5" fill="#172d49" stroke="#315b86"/>
+      <text x="205" y="25" fill="#8abaff">LOCAL CONFIRMATION</text>
+      <rect x="404" width="188" height="39" rx="19.5" fill="#3d3120" stroke="#745c31"/>
+      <text x="424" y="25" fill="#f4cf79">QUOTA DECISIONS</text>
+    </g>
+  </g>
+
+  <circle cx="1125" cy="57" r="4" fill="#54f2a3" opacity="0.8"/>
+  <circle cx="1088" cy="91" r="2.5" fill="#79a7ff" opacity="0.8"/>
+  <circle cx="1148" cy="122" r="2" fill="#f5c96a" opacity="0.8"/>
+</svg>
